@@ -11,14 +11,23 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\vsystemctl
+~MSle0/\vsystemctl
+
+# Last Substitute Search Pattern:
+~MSle0~&git
 
 # Last Substitute String:
-$
+$yadm
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1638419768,,"q"
+:w yadm
+|2,0,1638419766,,"w yadm"
 :x
-|2,0,1638408329,,"x"
+|2,0,1638419759,,"x"
+:%s/git/yadm/gc
+|2,0,1638419751,,"%s/git/yadm/gc"
 :w
 |2,0,1638346550,,"w"
 :34
@@ -57,8 +66,6 @@ $
 |2,0,1637254459,,"xa"
 :vsp ~/.aws/config
 |2,0,1637254455,,"vsp ~/.aws/config"
-:q
-|2,0,1637217460,,"q"
 :set nonumber
 |2,0,1637181312,,"set nonumber"
 :set nonu
@@ -109,6 +116,8 @@ $
 |2,0,1635985748,,"set paste"
 
 # Search String History (newest to oldest):
+? git
+|2,1,1638419751,,"git"
 ?/\vsystemctl
 |2,1,1638347203,47,"\\vsystemctl"
 ? \<aws_network_interface\>
@@ -207,8 +216,6 @@ $
 |2,1,1636765040,47,"\\vautoload"
 ?/\vbrew
 |2,1,1636764647,47,"\\vbrew"
-?/\plugins
-|2,1,1636763747,47,"\\plugins"
 
 # Expression History (newest to oldest):
 
@@ -257,36 +264,56 @@ $
 # global variables:
 
 # File marks:
-'0  163  0  ~/.zshrc
-|4,48,163,0,1638419641,"~/.zshrc"
-'1  1  0  ~/.vim/myplugins.vim
-|4,49,1,0,1638419165,"~/.vim/myplugins.vim"
-'2  1  4  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,50,1,4,1638408329,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
-'3  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
-|4,51,1,0,1638403823,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+'0  3  0  ~/yadm
+|4,48,3,0,1638419768,"~/yadm"
+'1  163  0  ~/.zshrc
+|4,49,163,0,1638419641,"~/.zshrc"
+'2  1  0  ~/.vim/myplugins.vim
+|4,50,1,0,1638419165,"~/.vim/myplugins.vim"
+'3  1  4  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
+|4,51,1,4,1638408329,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
 '4  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
-|4,52,1,0,1638402995,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
-'5  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
-|4,53,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+|4,52,1,0,1638403823,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+'5  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,53,1,0,1638402995,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
 '6  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
 |4,54,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
 '7  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
 |4,55,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
 '8  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
 |4,56,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
-'9  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,57,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
+'9  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,57,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
 
 # Jumplist (newest first):
+-'  3  0  ~/yadm
+|4,39,3,0,1638419768,"~/yadm"
+-'  1  24  ~/yadm
+|4,39,1,24,1638419751,"~/yadm"
 -'  163  0  ~/.zshrc
 |4,39,163,0,1638419641,"~/.zshrc"
+-'  163  0  ~/.zshrc
+|4,39,163,0,1638419641,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1638419612,"~/.zshrc"
 -'  1  0  ~/.zshrc
 |4,39,1,0,1638419612,"~/.zshrc"
 -'  1  0  ~/.vim/myplugins.vim
 |4,39,1,0,1638419165,"~/.vim/myplugins.vim"
 -'  1  0  ~/.vim/myplugins.vim
 |4,39,1,0,1638419165,"~/.vim/myplugins.vim"
+-'  1  0  ~/.vim/myplugins.vim
+|4,39,1,0,1638419165,"~/.vim/myplugins.vim"
+-'  1  0  ~/.vim/myplugins.vim
+|4,39,1,0,1638419165,"~/.vim/myplugins.vim"
+-'  1  4  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
+|4,39,1,4,1638408329,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
+-'  1  4  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
+|4,39,1,4,1638408329,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
+-'  1  4  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
+|4,39,1,4,1638408329,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
+-'  1  4  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
+|4,39,1,4,1638408329,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
 -'  1  4  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
 |4,39,1,4,1638408329,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
 -'  1  4  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
@@ -312,6 +339,34 @@ $
 -'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
 |4,39,1,0,1638403823,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
 -'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,1,0,1638403823,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,1,0,1638403823,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,1,0,1638403823,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,1,0,1638403823,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,1,0,1638403823,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,1,0,1638403823,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,1,0,1638403823,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,1,0,1638403823,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,1,0,1638402995,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,1,0,1638402995,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,1,0,1638402995,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,1,0,1638402995,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,1,0,1638402995,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,1,0,1638402995,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
 |4,39,1,0,1638402995,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
 -'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
 |4,39,1,0,1638402995,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
@@ -327,6 +382,58 @@ $
 |4,39,1,0,1638402995,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
 -'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
 |4,39,1,0,1638402995,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,1,0,1638402995,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,1,0,1638402995,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
+-'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
+|4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
 -'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
 |4,39,3,0,1638400091,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
 -'  3  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
@@ -379,108 +486,18 @@ $
 |4,39,1,0,1638400062,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
 -'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
 |4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
-|4,39,1,0,1638400062,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
-|4,39,1,0,1638400062,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
-|4,39,1,0,1638400062,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
-|4,39,1,0,1638400062,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
-|4,39,1,0,1638400062,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
-|4,39,1,0,1638400062,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  0  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
-|4,39,1,0,1638400062,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  5  ~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo
-|4,39,1,5,1638400062,"~/src/lre-lead-gen/.git/rebase-merge/git-rebase-todo"
--'  1  36  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
-|4,39,1,36,1638399679,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
--'  1  36  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
-|4,39,1,36,1638399679,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
--'  1  36  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
-|4,39,1,36,1638399679,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
--'  1  36  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
-|4,39,1,36,1638399679,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
--'  1  36  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
-|4,39,1,36,1638399679,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
--'  1  36  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
-|4,39,1,36,1638399679,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
--'  1  36  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
-|4,39,1,36,1638399679,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
--'  1  36  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
-|4,39,1,36,1638399679,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
--'  1  36  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
-|4,39,1,36,1638399679,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
--'  1  36  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
-|4,39,1,36,1638399679,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
--'  1  36  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
-|4,39,1,36,1638399679,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
--'  1  36  ~/src/lre-lead-gen/.git/COMMIT_EDITMSG
-|4,39,1,36,1638399679,"~/src/lre-lead-gen/.git/COMMIT_EDITMSG"
 
 # History of marks within files (newest to oldest):
+
+> ~/yadm
+	*	1638419766	0
+	"	3	0
+	^	3	25
+	.	3	0
+	+	3	0
+	+	1	0
+	+	2	0
+	+	3	0
 
 > ~/.zshrc
 	*	1638419639	0
