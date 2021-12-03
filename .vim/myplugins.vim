@@ -68,6 +68,18 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
 
 
+" session management, auto file save
+Plug 'thaerkh/vim-workspace'
+"session workspace plugin
+let g:workspace_session_directory = $HOME . '/.vim/sessions/'
+"let g:workspace_undodir='~/.undodir'
+let g:workspace_autosave_always = 1
+let g:workspace_session_disable_on_args = 1
+let g:workspace_autocreate = 1
+" provides automatic closing of quotes, parenthesis, brackets, etc.,
+Plug 'raimondi/delimitmate'
+
+
 if has('nvim')
   "Enables :Gbrowse from fugitive.vim to open GitHub URLs.
   Plug 'tpope/vim-rhubarb'
@@ -172,16 +184,6 @@ if has('nvim')
   " TODO : https://vimawesome.com/plugin/vim-babel
   " TODO : ctags auto update : https://tbaggery.com/2011/08/08/effortless-ctags-with-git.html
 
-  " session management, auto file save
-  Plug 'thaerkh/vim-workspace'
-  "session workspace plugin
-  let g:workspace_session_directory = $HOME . '/.vim/sessions/'
-  "let g:workspace_undodir='~/.undodir'
-  let g:workspace_autosave_always = 1
-  let g:workspace_session_disable_on_args = 1
-  let g:workspace_autocreate = 1
-  " provides automatic closing of quotes, parenthesis, brackets, etc.,
-  Plug 'raimondi/delimitmate'
 
   " Usage:
   "     :call CmdAlias('<lhs>', '<rhs>', [flags])
